@@ -6,5 +6,8 @@ router.get('/', function(req, res, next) {
 res.json({ message: 'Welcome to Desolty Clothing API 🚀' });
 
 });
+app.get("/health", (req, res) => {
+  res.json({ status: "ok", message: "Desolty backend is running 🚀" });
+});
 
 module.exports = router;
